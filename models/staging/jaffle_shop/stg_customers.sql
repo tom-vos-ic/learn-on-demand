@@ -2,7 +2,7 @@ with customers as (
     Select id as customer_id,
        FIRST_NAME
        , LAST_NAME
-from IC_TRAINING_DB.JAFFLE_SHOP.CUSTOMERS
+from {{ source('jaffle_shop','customers')}}
 )
 
 select * from customers

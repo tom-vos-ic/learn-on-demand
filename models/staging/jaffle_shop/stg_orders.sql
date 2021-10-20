@@ -3,7 +3,7 @@ with orders as (
        USER_ID as customer_id,
        ORDER_DATE,
        STATUS
-  from IC_TRAINING_DB.JAFFLE_SHOP.ORDERS
+  from {{ source('jaffle_shop','orders')}}
 )
 
 select * from orders

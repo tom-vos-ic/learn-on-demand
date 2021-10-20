@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+   - name: jaffle_shop
+     database: ic_training_db
+     tables: 
+       - name: customers
+       - name: orders
